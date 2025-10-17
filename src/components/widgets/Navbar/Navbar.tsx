@@ -10,10 +10,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "@/assets/logo 2.png";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -25,10 +24,27 @@ const navItems = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
+  // Scroll detection
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) setScrolled(true);
+      else setScrolled(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 w-full  border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 max-w-7xl mx-auto">
+    <header
+      className={`sticky w-full z-50 transition-all duration-300 max-w-7xl mx-auto ${
+        scrolled
+          ? "bg-background/95 top-5 rounded-full shadow-lg border border-border/40 backdrop-blur"
+          : "bg-transparent top-0 rounded-none shadow-none"
+      }`}
+    >
       <nav className="container flex h-16 items-center justify-between mx-auto px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 h-auto w-28">
@@ -72,9 +88,7 @@ export function Navbar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px] px-6">
-            <VisuallyHidden>
-              <SheetTitle>Hidden Accessible Title</SheetTitle>
-            </VisuallyHidden>
+            <SheetTitle className="sr-only">Menu</SheetTitle>
             <div className="flex flex-col gap-6 mt-6">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;

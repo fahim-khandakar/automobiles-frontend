@@ -17,14 +17,14 @@ export default function Hero() {
   const shown = reviewData.images.slice(0, 3);
   return (
     <section
-      className=" h-[350px] md:min-h-screen bg-cover"
+      className=" h-[450px] md:min-h-screen bg-cover"
       style={{
         backgroundImage:
           "url(https://i.ibb.co/gtbpHZf/peter-broomfield-m3m-ln-R90u-M-unsplash.jpg)",
       }}
     >
       <div className=" bg-opacity-5"></div>
-      <div className="flex items-center  max-w-7xl mx-auto  h-[350px] md:min-h-screen">
+      <div className="flex items-center px-5  pt-5 md:pt-0  max-w-7xl mx-auto  h-[350px] md:min-h-screen">
         <div className="text-white">
           <div className="space-y-8">
             <h6 className="font-semibold">Unleash Pure Electric Power</h6>
@@ -83,7 +83,7 @@ export default function Hero() {
                   <Link
                     href={reviewData.addHref}
                     aria-label="Add"
-                    className="absolute right-0 translate-x-4/6 z-50"
+                    className="absolute right-0 translate-x-4/6 z-20"
                   >
                     <span
                       className="flex items-center justify-center rounded-full border-2 bg-white border-gray-300 text-gray-700 hover:bg-gray-200 active:scale-95 shadow-sm transition-all duration-500"
