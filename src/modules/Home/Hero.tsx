@@ -17,14 +17,14 @@ export default function Hero() {
   const shown = reviewData.images.slice(0, 3);
   return (
     <section
-      className=" h-[450px] md:min-h-screen bg-cover"
+      className=" h-[650px] md:min-h-screen bg-cover absolute top-0 right-0 left-0"
       style={{
         backgroundImage:
           "url(https://i.ibb.co/gtbpHZf/peter-broomfield-m3m-ln-R90u-M-unsplash.jpg)",
       }}
     >
       <div className=" bg-opacity-5"></div>
-      <div className="flex items-center px-5  pt-5 md:pt-0  max-w-7xl mx-auto  h-[350px] md:min-h-screen">
+      <div className="flex items-center px-5  pt-5 md:pt-0  max-w-7xl mx-auto  h-[650px] md:min-h-screen">
         <div className="text-white">
           <div className="space-y-8">
             <h6 className="font-semibold">Unleash Pure Electric Power</h6>
