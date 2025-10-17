@@ -1,3 +1,9 @@
+import Hero from "@/modules/Home/Hero";
+
 export default function HomePage() {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
