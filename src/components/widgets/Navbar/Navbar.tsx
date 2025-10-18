@@ -43,7 +43,7 @@ export function Navbar() {
       className={`sticky w-full z-50 transition-all duration-300 max-w-7xl mx-auto ${
         scrolled
           ? "bg-background/95 top-5 rounded-full shadow-lg  backdrop-blur"
-          : "bg-transparent top-0 rounded-none shadow-none"
+          : "bg-transparent top-2 rounded-none shadow-none"
       }`}
     >
       <nav className="container flex h-16 items-center justify-between mx-auto px-4">
