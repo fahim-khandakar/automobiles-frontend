@@ -24,7 +24,7 @@ export default function Hero() {
       }}
     >
       <div className=" bg-opacity-5"></div>
-      <div className="flex items-center px-5  pt-5 md:pt-0  max-w-7xl mx-auto  h-[650px] md:min-h-screen">
+      <div className="flex items-center px-5 pt-16 md:pt-16 max-w-7xl mx-auto h-[650px] md:min-h-screen">
         <div className="text-white">
           <div className="space-y-8">
             <h6 className="font-semibold">Unleash Pure Electric Power</h6>
