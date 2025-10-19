@@ -17,7 +17,7 @@ export default function Hero() {
   const shown = reviewData.images.slice(0, 3);
   return (
     <section
-      className=" h-[650px] md:min-h-screen bg-cover absolute top-0 right-0 left-0"
+      className=" h-[650px] md:min-h-screen bg-cover "
       style={{
         backgroundImage:
           "url(https://i.ibb.co/gtbpHZf/peter-broomfield-m3m-ln-R90u-M-unsplash.jpg)",
