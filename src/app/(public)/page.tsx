@@ -1,6 +1,7 @@
 import Experience from "@/modules/Home/Experience";
 import Hero from "@/modules/Home/Hero";
 import HomeAbout from "@/modules/Home/HomeAbout";
+import Services from "@/modules/Home/Services";
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <Hero />
       <HomeAbout />
       <Experience />
+      <Services />
     </div>
   );
 }

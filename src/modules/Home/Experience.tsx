@@ -12,21 +12,21 @@ export default function Experience() {
   return (
     <section className="relative">
       <Image
-        className="w-full h-full object-cover"
+        className="w-full h-[400px] md:h-full object-cover"
         src={worldBg}
         alt="World Background Image"
       />
       <div className="absolute inset-0 flex justify-center items-center">
-        <div className="flex gap-10 flex-col md:flex-row ">
+        <div className="flex gap-5 md:gap-10 flex-col md:flex-row">
           {data.map((item, idx) => (
-            <p key={idx} className="text-white whitespace-pre-line flex">
+            <div key={idx} className="text-white whitespace-pre-line flex">
               <p className="border-r-2 border-amber-500 pr-4 text-4xl md:text-6xl font-bold">
                 {item.count}
               </p>{" "}
               <p className="font-semibold text-lg md:text-xl pl-5">
                 {item.details}
               </p>
-            </p>
+            </div>
           ))}
         </div>
       </div>
