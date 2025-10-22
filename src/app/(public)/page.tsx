@@ -1,4 +1,5 @@
 import Brands from "@/modules/Home/Brands";
+import CustomerReview from "@/modules/Home/CustomerReview";
 import Experience from "@/modules/Home/Experience";
 import Hero from "@/modules/Home/Hero";
 import HomeAbout from "@/modules/Home/HomeAbout";
@@ -9,11 +10,12 @@ export default function HomePage() {
   return (
     <div className="">
       <Hero />
-      <Experience />
       <HomeAbout />
       <Brands />
       <Services />
+      <Experience />
       <WhyChooseUs />
+      <CustomerReview />
     </div>
   );
 }
