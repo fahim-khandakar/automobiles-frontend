@@ -1,3 +1,4 @@
+import Title from "@/components/common/Title/Title";
 import { Button } from "@/components/ui/button";
 import { Plus, Star } from "lucide-react";
 import Image from "next/image";
@@ -27,7 +28,7 @@ export default function Hero() {
       <div className="flex items-center px-5 pt-16 md:pt-16 max-w-7xl mx-auto h-[650px] md:min-h-screen">
         <div className="text-white">
           <div className="space-y-8">
-            <h6 className="font-semibold">Unleash Pure Electric Power</h6>
+            <Title title="Unleash Pure Electric Power" />
             <h1 className="text-3xl md:text-7xl font-bold">
               Speed Beyond Limits
             </h1>

@@ -11,6 +11,7 @@ import brand6 from "@/assets/Brands/brand-06.png";
 import brand7 from "@/assets/Brands/brand-07.png";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import Title from "@/components/common/Title/Title";
 
 export default function Brands() {
   const [limit, setLimit] = useState(7);
@@ -60,7 +61,7 @@ export default function Brands() {
       <div className="relative z-10 flex flex-col items-center justify-center py-24 px-4 gap-14">
         {/* Heading */}
         <div className="text-center max-w-2xl">
-          <h5 className="font-semibold  pb-3">Our Brands</h5>
+          <Title title="Our Brands" />
           <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
             We Repair All Makes of Automobiles
           </h1>

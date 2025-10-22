@@ -3,6 +3,7 @@ import Experience from "@/modules/Home/Experience";
 import Hero from "@/modules/Home/Hero";
 import HomeAbout from "@/modules/Home/HomeAbout";
 import Services from "@/modules/Home/Services";
+import WhyChooseUs from "@/modules/Home/WhyChooseUs";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <HomeAbout />
       <Brands />
       <Services />
+      <WhyChooseUs />
     </div>
   );
 }

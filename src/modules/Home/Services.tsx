@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import bgImage from "@/assets/home-about.jpg";
 import ServiceCard from "@/components/common/Service Card/ServiceCard";
+import Title from "@/components/common/Title/Title";
 
 export default function Services() {
   const data = [
@@ -23,7 +24,7 @@ export default function Services() {
     <section className="bg-[#050607] text-white py-20">
       <div className=" max-w-7xl mx-auto px-6">
         <div>
-          <h6 className="font-semibold pb-5">Services</h6>
+          <Title title="Services" />
           <h1 className="font-semibold text-4xl md:text-6xl pb-8">
             Redefining Automotive Excellence
           </h1>
