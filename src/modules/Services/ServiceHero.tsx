@@ -15,7 +15,7 @@ export default function ServiceHero() {
           <div className="space-y-8">
             <Title title="Detail Service" />
             <h1 className="text-3xl md:text-7xl font-bold">Machine Upgrade</h1>
-            <p className="w-8/12 text-xl text-gray-400">
+            <p className="w-full md:w-8/12 text-xl text-gray-400">
               Unlock the full potential of your Voltura with advanced
               performance tuning, powertrain optimization, and futuristic system
               upgrades
