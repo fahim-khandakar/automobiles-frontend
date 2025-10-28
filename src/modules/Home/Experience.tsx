@@ -1,5 +1,4 @@
 import Image from "next/image";
-import worldBg from "@/assets/block-wrapper.jpg";
 
 export default function Experience() {
   const data = [
@@ -13,8 +12,10 @@ export default function Experience() {
     <section className="relative">
       <Image
         className="w-full h-[400px] md:h-full object-cover"
-        src={worldBg}
+        src={"/assets/block-wrapper.jpg"}
         alt="World Background Image"
+        width={5000}
+        height={5000}
       />
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="flex gap-5 md:gap-10 flex-col md:flex-row">

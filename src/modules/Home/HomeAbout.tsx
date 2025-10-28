@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import homeAbout from "@/assets/home-about.jpg";
 import Title from "@/components/common/Title/Title";
 
 export default function HomeAbout() {
@@ -25,8 +24,10 @@ export default function HomeAbout() {
         <div className="w-full lg:w-1/2 h-auto relative mt-10 lg:mt-0">
           <Image
             className="bg-cover opacity-40 w-full h-auto"
-            src={homeAbout}
+            src={"/assets/home-about.jpg"}
             alt="World Background Image"
+            width={400}
+            height={400}
           />
           <p className="p-5 bg-[#121418] text-lg md:text-2xl lg:text-3xl font-semibold absolute left-0 right-0  -bottom-32 lg:right-20 lg:-left-20">
             Driving Voltura means driving tomorrow, today. Every detail, from

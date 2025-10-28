@@ -1,14 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import bgImage from "@/assets/CTA-2.jpg";
-import brand1 from "@/assets/Brands/brand-01.png";
-import brand2 from "@/assets/Brands/brand-02.png";
-import brand3 from "@/assets/Brands/brand-03.png";
-import brand4 from "@/assets/Brands/brand-04.png";
-import brand5 from "@/assets/Brands/brand-05.png";
-import brand6 from "@/assets/Brands/brand-06.png";
-import brand7 from "@/assets/Brands/brand-07.png";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Title from "@/components/common/Title/Title";
@@ -18,20 +10,13 @@ export default function Brands() {
   const [isOpen, setIsOpen] = useState(false);
 
   const data = [
-    brand1,
-    brand2,
-    brand3,
-    brand4,
-    brand5,
-    brand6,
-    brand7,
-    brand1,
-    brand2,
-    brand3,
-    brand4,
-    brand5,
-    brand6,
-    brand7,
+    "/assets/Brands/brand-01.png",
+    "/assets/Brands/brand-02.png",
+    "/assets/Brands/brand-03.png",
+    "/assets/Brands/brand-04.png",
+    "/assets/Brands/brand-05.png",
+    "/assets/Brands/brand-06.png",
+    "/assets/Brands/brand-07.png",
   ];
 
   const handleLimit = () => {
@@ -49,7 +34,7 @@ export default function Brands() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src={bgImage}
+          src={"/assets/CTA-2.jpg"}
           alt="Background"
           fill
           className="object-cover object-top brightness-50"
@@ -82,6 +67,8 @@ export default function Brands() {
                 src={img}
                 alt={`Brand ${idx + 1}`}
                 className="w-24 md:w-28 lg:w-32 object-contain mix-blend-multiply"
+                width={400}
+                height={400}
               />
             </div>
           ))}

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import sideImage from "@/assets/USP-1.jpg";
 import { Progress } from "@/components/ui/progress";
 import Title from "@/components/common/Title/Title";
 
@@ -10,9 +9,10 @@ export default function WhyChooseUs() {
         {/* Left Side Image */}
         <div className="relative w-full md:w-1/2 h-[450px] rounded-2xl overflow-hidden">
           <Image
-            src={sideImage}
+            src={"/assets/USP-1.jpg"}
             alt="Why Choose Us"
             className="object-cover w-full h-full brightness-50 hover:scale-105 transition-transform duration-700 ease-out"
+            fill
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-black/50 to-transparent" />
         </div>

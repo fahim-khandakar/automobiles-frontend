@@ -25,6 +25,7 @@ export default function ServiceCard({
         src={imageSrc}
         alt={title}
         className="w-full h-full object-cover"
+        fill
       />
       <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-5 gap-3">
         <h3 className="text-white text-xl md:text-2xl font-bold border-l-4 pl-2">

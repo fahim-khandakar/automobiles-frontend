@@ -12,8 +12,6 @@ import {
 } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import logo from "@/assets/kba logo.png";
-import logo2 from "@/assets/logo 2.png";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -49,7 +47,12 @@ export function Navbar() {
       <nav className="flex h-16 items-center justify-between max-w-7xl mx-auto px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 h-auto w-28">
-          <Image src={scrolled ? logo2 : logo} alt="Logo" />
+          <Image
+            src={scrolled ? "/assets/logo 2.png" : "/assets/kba logo.png"}
+            alt="Logo"
+            width={100}
+            height={100}
+          />
         </Link>
 
         {/* Desktop Navigation */}

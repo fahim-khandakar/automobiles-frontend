@@ -1,5 +1,4 @@
 import ServiceCard from "@/components/common/Service Card/ServiceCard";
-import bgImage from "@/assets/home-about.jpg";
 
 export default function ServiceCards() {
   const data = [
@@ -8,14 +7,14 @@ export default function ServiceCards() {
       description:
         "Unlock the full potential of your Voltura with advanced performance tuning, powertrain optimization, and futuristic system upgrades",
       buttonText: "See details",
-      imageSrc: bgImage,
+      imageSrc: "/assets/home-about.jpg",
     },
     {
       title: "Engine Repair",
       description:
         "From precision diagnostics to full-scale repairs, our expert technicians ensure your engine runs smoothly, efficiently, and reliably.",
       buttonText: "See details",
-      imageSrc: bgImage,
+      imageSrc: "/assets/home-about.jpg",
     },
   ];
   return (

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Star } from "lucide-react";
-import reviewer1 from "@/assets/linkedin-sales-solutions-pAtA8xe_iVM-unsplash (1).jpg";
 import Title from "@/components/common/Title/Title";
 
 export default function CustomerReviews() {
@@ -10,7 +9,7 @@ export default function CustomerReviews() {
     {
       name: "James Cooper",
       role: "Tesla Model S Owner",
-      image: reviewer1,
+      image: "/assets/linkedin-sales-solutions-pAtA8xe_iVM-unsplash (1).jpg",
       rating: 5,
       review:
         "Voltura has transformed how I view vehicle servicing. Their attention to detail and innovation is unmatched.",
@@ -18,7 +17,7 @@ export default function CustomerReviews() {
     {
       name: "Sophia Turner",
       role: "Audi e-tron Driver",
-      image: reviewer1,
+      image: "/assets/linkedin-sales-solutions-pAtA8xe_iVM-unsplash (1).jpg",
       rating: 5,
       review:
         "Fast, efficient, and professional! The entire process was seamless, and the results were beyond expectations.",
@@ -26,7 +25,7 @@ export default function CustomerReviews() {
     {
       name: "Michael Rodriguez",
       role: "BMW iX Customer",
-      image: reviewer1,
+      image: "/assets/linkedin-sales-solutions-pAtA8xe_iVM-unsplash (1).jpg",
       rating: 4.5,
       review:
         "Exceptional customer service and next-gen expertise. Voltura truly stands for quality and innovation.",
@@ -80,6 +79,8 @@ export default function CustomerReviews() {
                   src={item.image}
                   alt={item.name}
                   className="w-12 h-12 rounded-full object-cover border border-gray-700"
+                  width={100}
+                  height={100}
                 />
                 <div>
                   <h3 className="font-semibold">{item.name}</h3>
