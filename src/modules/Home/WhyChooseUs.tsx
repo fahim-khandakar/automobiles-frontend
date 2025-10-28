@@ -9,7 +9,7 @@ export default function WhyChooseUs() {
         {/* Left Side Image */}
         <div className="relative w-full md:w-1/2 h-[450px] rounded-2xl overflow-hidden">
           <Image
-            src={"/assets/USP-1.jpg"}
+            src={"https://i.ibb.co.com/9mFsXJmy/USP-1.jpg"}
             alt="Why Choose Us"
             className="object-cover w-full h-full brightness-50 hover:scale-105 transition-transform duration-700 ease-out"
             fill

@@ -48,7 +48,11 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 h-auto w-28">
           <Image
-            src={scrolled ? "/assets/logo 2.png" : "/assets/kba logo.png"}
+            src={
+              scrolled
+                ? "https://i.ibb.co.com/Q7Trmzc6/logo-2.png"
+                : "https://i.ibb.co.com/jkzQLfXK/kba-logo.png"
+            }
             alt="Logo"
             width={100}
             height={100}

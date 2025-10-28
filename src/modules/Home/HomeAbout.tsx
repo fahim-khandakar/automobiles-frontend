@@ -24,7 +24,7 @@ export default function HomeAbout() {
         <div className="w-full lg:w-1/2 h-auto relative mt-10 lg:mt-0">
           <Image
             className="bg-cover opacity-40 w-full h-auto"
-            src={"/assets/home-about.jpg"}
+            src={"https://i.ibb.co.com/v4MGZj0j/home-about.jpg"}
             alt="World Background Image"
             width={400}
             height={400}

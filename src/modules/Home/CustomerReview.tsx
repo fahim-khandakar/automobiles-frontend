@@ -9,7 +9,8 @@ export default function CustomerReviews() {
     {
       name: "James Cooper",
       role: "Tesla Model S Owner",
-      image: "/assets/linkedin-sales-solutions-pAtA8xe_iVM-unsplash (1).jpg",
+      image:
+        "https://i.ibb.co.com/TDBK5r15/linkedin-sales-solutions-p-At-A8xe-i-VM-unsplash-1.jpg",
       rating: 5,
       review:
         "Voltura has transformed how I view vehicle servicing. Their attention to detail and innovation is unmatched.",
@@ -17,7 +18,8 @@ export default function CustomerReviews() {
     {
       name: "Sophia Turner",
       role: "Audi e-tron Driver",
-      image: "/assets/linkedin-sales-solutions-pAtA8xe_iVM-unsplash (1).jpg",
+      image:
+        "https://i.ibb.co.com/TDBK5r15/linkedin-sales-solutions-p-At-A8xe-i-VM-unsplash-1.jpg",
       rating: 5,
       review:
         "Fast, efficient, and professional! The entire process was seamless, and the results were beyond expectations.",
@@ -25,7 +27,8 @@ export default function CustomerReviews() {
     {
       name: "Michael Rodriguez",
       role: "BMW iX Customer",
-      image: "/assets/linkedin-sales-solutions-pAtA8xe_iVM-unsplash (1).jpg",
+      image:
+        "https://i.ibb.co.com/TDBK5r15/linkedin-sales-solutions-p-At-A8xe-i-VM-unsplash-1.jpg",
       rating: 4.5,
       review:
         "Exceptional customer service and next-gen expertise. Voltura truly stands for quality and innovation.",

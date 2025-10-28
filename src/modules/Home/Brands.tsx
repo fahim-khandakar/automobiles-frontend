@@ -10,13 +10,13 @@ export default function Brands() {
   const [isOpen, setIsOpen] = useState(false);
 
   const data = [
-    "/assets/Brands/brand-01.png",
-    "/assets/Brands/brand-02.png",
-    "/assets/Brands/brand-03.png",
-    "/assets/Brands/brand-04.png",
-    "/assets/Brands/brand-05.png",
-    "/assets/Brands/brand-06.png",
-    "/assets/Brands/brand-07.png",
+    "https://i.ibb.co.com/XZz6VvZY/brand-01.png",
+    "https://i.ibb.co.com/hRNrqN1b/brand-02.png",
+    "https://i.ibb.co.com/Jw7SKw4P/brand-03.png",
+    "https://i.ibb.co.com/zpW4QqT/brand-04.png",
+    "https://i.ibb.co.com/fzNpZxw0/brand-05.png",
+    "https://i.ibb.co.com/Kpmcn3ky/brand-06.png",
+    "https://i.ibb.co.com/MDmQkynN/brand-07.png",
   ];
 
   const handleLimit = () => {
@@ -34,7 +34,7 @@ export default function Brands() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src={"/assets/CTA-2.jpg"}
+          src={"https://i.ibb.co.com/whM5FPgb/CTA-2.jpg"}
           alt="Background"
           fill
           className="object-cover object-top brightness-50"
