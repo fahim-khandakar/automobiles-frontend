@@ -9,7 +9,6 @@ interface TeamCardProps {
 export default function TeamCard({ image, title, description }: TeamCardProps) {
   return (
     <div className="bg-[#121418] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition-transform duration-300">
-      {/* Image */}
       <div className="relative w-full h-64">
         <Image
           src={image}
@@ -20,7 +19,6 @@ export default function TeamCard({ image, title, description }: TeamCardProps) {
         />
       </div>
 
-      {/* Content */}
       <div className="p-6  text-white space-y-2">
         <h3 className="text-xl font-bold">{title}</h3>
         <p className="text-gray-400 text-sm md:text-base">{description}</p>
