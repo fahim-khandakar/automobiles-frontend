@@ -5,7 +5,15 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**", // allow all https domains
+        hostname: "i.ibb.co", // ✅ Correct one
+      },
+      {
+        protocol: "https",
+        hostname: "thanksfortoday.studio",
+      },
+      {
+        protocol: "https",
+        hostname: "**", // optional: allows all HTTPS domains
       },
     ],
   },
