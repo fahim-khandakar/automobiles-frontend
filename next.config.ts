@@ -1,9 +1,21 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    domains: ["thanksfortoday.studio", "i.ibb.co", "i.ibb.co.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+      },
+      {
+        protocol: "https",
+        hostname: "thanksfortoday.studio",
+      },
+      {
+        protocol: "https",
+        hostname: "voltura.wpenginepowered.com",
+      },
+    ],
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
