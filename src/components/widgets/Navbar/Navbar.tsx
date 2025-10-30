@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import logo from "@/assets/kba logo.png";
+import logo2 from "@/assets/logo 2.png";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -48,11 +50,7 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 h-auto w-28">
           <Image
-            src={
-              scrolled
-                ? "https://i.ibb.co.com/Q7Trmzc6/logo-2.png"
-                : "https://i.ibb.co.com/jkzQLfXK/kba-logo.png"
-            }
+            src={scrolled ? logo2 : logo}
             alt="Logo"
             width={100}
             height={100}

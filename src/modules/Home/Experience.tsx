@@ -1,4 +1,5 @@
 import Image from "next/image";
+import bg from "@/assets/block-wrapper.jpg";
 
 export default function Experience() {
   const data = [
@@ -12,7 +13,7 @@ export default function Experience() {
     <section className="relative">
       <Image
         className="w-full h-[400px] md:h-full object-cover"
-        src={"https://i.ibb.co.com/35FbRc1r/block-wrapper.jpg"}
+        src={bg}
         alt="World Background Image"
         width={5000}
         height={5000}

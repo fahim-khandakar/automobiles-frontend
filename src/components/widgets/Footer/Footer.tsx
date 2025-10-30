@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import logo from "@/assets/kba logo.png";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center space-x-2 h-auto w-28">
               <Image
-                src={"/assets/kba logo.png"}
+                src={logo}
                 alt="Logo"
                 width={500}
                 height={500}

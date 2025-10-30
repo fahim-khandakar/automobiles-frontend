@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Title from "@/components/common/Title/Title";
-
+import sideImage from "@/assets/home-about.jpg";
 export default function HomeAbout() {
   return (
     <div className="bg-[#050607] text-white">
@@ -24,7 +24,7 @@ export default function HomeAbout() {
         <div className="w-full lg:w-1/2 h-auto relative mt-10 lg:mt-0">
           <Image
             className="bg-cover opacity-40 w-full h-auto"
-            src={"https://i.ibb.co.com/v4MGZj0j/home-about.jpg"}
+            src={sideImage}
             alt="World Background Image"
             width={400}
             height={400}

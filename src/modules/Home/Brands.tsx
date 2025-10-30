@@ -4,20 +4,20 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Title from "@/components/common/Title/Title";
+import brand from "@/assets/Brands/brand-01.png";
+import brand2 from "@/assets/Brands/brand-02.png";
+import brand3 from "@/assets/Brands/brand-03.png";
+import brand4 from "@/assets/Brands/brand-04.png";
+import brand5 from "@/assets/Brands/brand-05.png";
+import brand6 from "@/assets/Brands/brand-06.png";
+import brand7 from "@/assets/Brands/brand-07.png";
+import bg from "@/assets/CTA-2.jpg";
 
 export default function Brands() {
   const [limit, setLimit] = useState(7);
   const [isOpen, setIsOpen] = useState(false);
 
-  const data = [
-    "https://i.ibb.co.com/XZz6VvZY/brand-01.png",
-    "https://i.ibb.co.com/hRNrqN1b/brand-02.png",
-    "https://i.ibb.co.com/Jw7SKw4P/brand-03.png",
-    "https://i.ibb.co.com/zpW4QqT/brand-04.png",
-    "https://i.ibb.co.com/fzNpZxw0/brand-05.png",
-    "https://i.ibb.co.com/Kpmcn3ky/brand-06.png",
-    "https://i.ibb.co.com/MDmQkynN/brand-07.png",
-  ];
+  const data = [brand, brand2, brand3, brand4, brand5, brand6, brand7];
 
   const handleLimit = () => {
     if (!isOpen) {
@@ -34,7 +34,7 @@ export default function Brands() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src={"https://i.ibb.co.com/whM5FPgb/CTA-2.jpg"}
+          src={bg}
           alt="Background"
           fill
           className="object-cover object-top brightness-50"

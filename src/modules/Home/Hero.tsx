@@ -71,9 +71,7 @@ export default function Hero() {
                       }}
                     >
                       <Image
-                        src={
-                          "https://i.ibb.co/gtbpHZf/peter-broomfield-m3m-ln-R90u-M-unsplash.jpg"
-                        }
+                        src={src}
                         alt={`avatar-${i}`}
                         width={reviewData.size}
                         height={reviewData.size}
