@@ -11,7 +11,7 @@ export default function Hero() {
       "https://thanksfortoday.studio/voltura/wp-content/uploads/sites/75/elementor/thumbs/Team3-rb7776oza0mav04beyszq7a6m12tf898zcs382ulqo.jpg",
       "https://thanksfortoday.studio/voltura/wp-content/uploads/sites/75/elementor/thumbs/Team3-rb7776oza0mav04beyszq7a6m12tf898zcs382ulqo.jpg",
     ],
-    addHref: "/add",
+    addHref: "/",
     size: 40,
   };
 
@@ -71,7 +71,9 @@ export default function Hero() {
                       }}
                     >
                       <Image
-                        src={src}
+                        src={
+                          "https://i.ibb.co/gtbpHZf/peter-broomfield-m3m-ln-R90u-M-unsplash.jpg"
+                        }
                         alt={`avatar-${i}`}
                         width={reviewData.size}
                         height={reviewData.size}
