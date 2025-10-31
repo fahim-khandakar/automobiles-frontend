@@ -40,10 +40,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed z-50 transition-all duration-300 max-w-7xl mx-auto ${
+      className={`fixed z-50 transition-all duration-300 max-w-7xl mx-auto animate-fadeDown ${
         scrolled
           ? "bg-background/95 shadow-lg backdrop-blur-md top-5 left-0 right-0 rounded-full"
-          : "bg-transparent top-0  left-0 right-0"
+          : "bg-transparent top-3  left-0 right-0"
       }`}
     >
       <nav className="flex h-16 items-center justify-between max-w-7xl mx-auto px-4">
