@@ -20,7 +20,11 @@ export default function ServiceCards() {
   return (
     <section className="bg-[#050607] text-white">
       <div className="max-w-7xl mx-auto px-5 md:px-0">
-        <h1 className="text-3xl md:text-7xl font-bold">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay={0}
+          className="text-3xl md:text-7xl font-bold"
+        >
           Browse Other Services
         </h1>
         <div className="flex flex-col md:flex-row gap-5 justify-between w-full h-[500px] pt-14 md:h-[500px]">
