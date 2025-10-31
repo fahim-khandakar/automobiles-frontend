@@ -1,6 +1,7 @@
 import Brands from "@/modules/Home/Brands";
 import CustomerReview from "@/modules/Home/CustomerReview";
 import Experience from "@/modules/Home/Experience";
+import Faq from "@/modules/Home/Faq";
 import Hero from "@/modules/Home/Hero";
 import HomeAbout from "@/modules/Home/HomeAbout";
 import Services from "@/modules/Home/Services";
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Services />
       <Experience />
       <WhyChooseUs />
+      <Faq />
       <CustomerReview />
     </div>
   );
