@@ -11,9 +11,8 @@ export default function HomeAbout() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20 pt-16 pb-36 lg:py-28 px-6">
         {/* Left content */}
         <div className="w-full lg:w-1/2">
-          <div data-aos="fade-up" data-aos-delay="0">
-            <Title title="About us" />
-          </div>
+          <Title title="About us" aos="fade-up" aosDelay={0} />
+
           <div data-aos="fade-up" data-aos-delay="100">
             <h1 className="text-3xl md:text-7xl font-bold pb-8">
               Shaping the Future of Mobility

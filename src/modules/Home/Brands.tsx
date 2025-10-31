@@ -61,9 +61,8 @@ export default function Brands() {
       <div className="relative z-10 flex flex-col items-center justify-center py-24 px-4 gap-14">
         {/* Heading */}
         <div className="text-center max-w-2xl">
-          <div data-aos="fade-up" data-aos-delay="0">
-            <Title title="Our Brands" />
-          </div>
+          <Title title="Our Brands" aos="fade-up" aosDelay={0} />
+
           <div data-aos="fade-up" data-aos-delay="100">
             <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
               We Repair All Makes of Automobiles

@@ -33,9 +33,11 @@ export default function Hero() {
       <div className="flex items-center px-5 pt-16 md:pt-16 max-w-7xl mx-auto h-[650px] md:min-h-screen">
         <div className="text-white space-y-8">
           {/* Title with AOS */}
-          <div data-aos="fade-up" data-aos-delay="100">
-            <Title title="Unleash Pure Electric Power" />
-          </div>
+          <Title
+            title="Unleash Pure Electric Power"
+            aos="fade-up"
+            aosDelay={100}
+          />
 
           {/* Main heading */}
           <h1

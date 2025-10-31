@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/common/Service Card/ServiceCard";
 import Title from "@/components/common/Title/Title";
@@ -19,22 +21,37 @@ export default function Services() {
       imageSrc: "https://i.ibb.co.com/v4MGZj0j/home-about.jpg",
     },
   ];
+
   return (
     <section className="bg-[#050607] text-white py-20">
       <div className=" max-w-7xl mx-auto px-6">
         <div>
-          <Title title="Services" />
-          <h1 className="font-semibold text-4xl md:text-6xl pb-8">
+          <Title title="Services" aos="fade-up" aosDelay={0} />
+
+          <h1
+            className="font-semibold text-4xl md:text-6xl pb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Redefining Automotive Excellence
           </h1>
-          <p className="pb-5 text-gray-400">
+
+          <p
+            className="pb-5 text-gray-400"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             From cutting-edge electric vehicles to advanced driver-assist
             technology, Voltura delivers services that push the boundaries of
             mobility. We combine precision engineering, innovation, and
             sustainability to ensure every drive is extraordinary
           </p>
-          <Button className="bg-white text-black">See all service</Button>
+
+          <div data-aos="fade-up" data-aos-delay="300">
+            <Button className="bg-white text-black">See all service</Button>
+          </div>
         </div>
+
         <div className="flex flex-col md:flex-row gap-5 justify-between w-full h-[500px] pt-14 md:h-[500px]">
           {data.map((s, idx) => (
             <ServiceCard
@@ -43,6 +60,7 @@ export default function Services() {
               description={s.description}
               imageSrc={s.imageSrc}
               title={s.title}
+              aosDelay={idx * 100} // stagger animation
             />
           ))}
         </div>

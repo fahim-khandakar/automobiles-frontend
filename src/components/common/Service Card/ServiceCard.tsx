@@ -10,6 +10,7 @@ interface ServiceCardProps {
   description: string;
   buttonText: string;
   onButtonClick?: () => void;
+  aosDelay?: number; // optional delay for staggered animations
 }
 
 export default function ServiceCard({
@@ -18,9 +19,14 @@ export default function ServiceCard({
   description,
   buttonText,
   onButtonClick,
+  aosDelay = 0, // default no delay
 }: ServiceCardProps) {
   return (
-    <div className="relative flex-1 rounded-lg overflow-hidden cursor-pointer border border-transparent hover:border-white transition-all duration-300">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={aosDelay}
+      className="relative flex-1 rounded-lg overflow-hidden cursor-pointer border border-transparent hover:border-white transition-all duration-300"
+    >
       <Image
         src={imageSrc}
         alt={title}
