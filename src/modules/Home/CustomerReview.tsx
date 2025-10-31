@@ -32,16 +32,26 @@ export default function CustomerReviews() {
         "Exceptional customer service and next-gen expertise. Voltura truly stands for quality and innovation.",
     },
   ];
+
   return (
     <section className="bg-[#050607] text-white py-20 border-t border-gray-900">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-14">
-          <Title title="Customer Reviews" />
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+          <Title title="Customer Reviews" aos="fade-up" aosDelay={0} />
+
+          <h1
+            className="text-4xl md:text-5xl font-extrabold leading-tight"
+            data-aos="fade-up"
+            data-aos-delay={100}
+          >
             What Our Clients Say
           </h1>
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+          <p
+            className="text-gray-400 mt-4 max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay={200}
+          >
             Hear directly from the people who trust Voltura. We’re proud to
             deliver experiences that redefine performance, trust, and care.
           </p>
@@ -52,6 +62,8 @@ export default function CustomerReviews() {
           {data.map((item, i) => (
             <div
               key={i}
+              data-aos="fade-up"
+              data-aos-delay={300 + i * 100} // stagger cards
               className="bg-[#0a0b0c] border border-gray-800 rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-500"
             >
               {/* Rating */}

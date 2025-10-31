@@ -21,10 +21,15 @@ export default function Experience() {
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="flex gap-5 md:gap-10 flex-col md:flex-row">
           {data.map((item, idx) => (
-            <div key={idx} className="text-white whitespace-pre-line flex">
+            <div
+              key={idx}
+              className="text-white whitespace-pre-line flex"
+              data-aos="fade-up"
+              data-aos-delay={idx * 100} // staggered delay
+            >
               <p className="border-r-2 border-[#00d8ff] pr-4 text-4xl md:text-6xl font-bold">
                 {item.count}
-              </p>{" "}
+              </p>
               <p className="font-semibold text-lg md:text-xl pl-5">
                 {item.details}
               </p>
