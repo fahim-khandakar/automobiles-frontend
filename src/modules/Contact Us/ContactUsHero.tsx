@@ -17,26 +17,50 @@ export default function ContactUsHero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl py-20 md:py-0 mx-auto px-5 min-h-screen flex flex-col md:flex-row items-center justify-between gap-14 text-white">
         {/* Left side - Contact Info */}
-        <div className="w-full md:w-5/12 space-y-8">
-          <Title title="Contact us" />
-          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
+        <div
+          className="w-full md:w-5/12 space-y-8"
+          data-aos="fade-up"
+          data-aos-delay={0}
+        >
+          <Title title="Contact us" aos="fade-up" aosDelay={0} />
+          <h1
+            className="text-3xl md:text-6xl font-bold leading-tight"
+            data-aos="fade-up"
+            data-aos-delay={100}
+          >
             Get in Touch
           </h1>
-          <p className="text-gray-300 text-base md:text-lg">
+          <p
+            className="text-gray-300 text-base md:text-lg"
+            data-aos="fade-up"
+            data-aos-delay={200}
+          >
             Have questions, ideas, or partnership inquiries? We’d love to hear
             from you. Let’s connect and build the future together.
           </p>
 
           <div className="space-y-6 mt-10">
-            <div className="flex items-center gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={300}
+              className="flex items-center gap-4"
+            >
               <MapPin className="w-6 h-6 text-[#00E0FF]" />
               <p>123 Innovation Street, Dhaka, Bangladesh</p>
             </div>
-            <div className="flex items-center gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={400}
+              className="flex items-center gap-4"
+            >
               <Phone className="w-6 h-6 text-[#00E0FF]" />
               <p>+880 1234 567 890</p>
             </div>
-            <div className="flex items-center gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={500}
+              className="flex items-center gap-4"
+            >
               <Mail className="w-6 h-6 text-[#00E0FF]" />
               <p>info@voltura.com</p>
             </div>
@@ -44,7 +68,11 @@ export default function ContactUsHero() {
         </div>
 
         {/* Right side - Form */}
-        <div className="w-full md:w-6/12 bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-10 space-y-6 shadow-lg">
+        <div
+          className="w-full md:w-6/12 bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-10 space-y-6 shadow-lg"
+          data-aos="fade-up"
+          data-aos-delay={600}
+        >
           <h2 className="text-2xl font-semibold mb-4">Send a Message</h2>
 
           <div className="space-y-4">
