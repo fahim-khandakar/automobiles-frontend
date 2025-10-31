@@ -17,7 +17,22 @@ export default function Brands() {
   const [limit, setLimit] = useState(7);
   const [isOpen, setIsOpen] = useState(false);
 
-  const data = [brand, brand2, brand3, brand4, brand5, brand6, brand7];
+  const data = [
+    brand,
+    brand2,
+    brand3,
+    brand4,
+    brand5,
+    brand6,
+    brand7,
+    brand,
+    brand2,
+    brand3,
+    brand4,
+    brand5,
+    brand6,
+    brand7,
+  ];
 
   const handleLimit = () => {
     if (!isOpen) {
@@ -46,14 +61,20 @@ export default function Brands() {
       <div className="relative z-10 flex flex-col items-center justify-center py-24 px-4 gap-14">
         {/* Heading */}
         <div className="text-center max-w-2xl">
-          <Title title="Our Brands" />
-          <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
-            We Repair All Makes of Automobiles
-          </h1>
-          <p className="text-gray-300">
-            We work with all makes and models of vehicles — ensuring quality and
-            reliability in every repair.
-          </p>
+          <div data-aos="fade-up" data-aos-delay="0">
+            <Title title="Our Brands" />
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
+              We Repair All Makes of Automobiles
+            </h1>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200">
+            <p className="text-gray-300">
+              We work with all makes and models of vehicles — ensuring quality
+              and reliability in every repair.
+            </p>
+          </div>
         </div>
 
         {/* Brand logos */}
@@ -61,6 +82,8 @@ export default function Brands() {
           {data.slice(0, limit).map((img, idx) => (
             <div
               key={idx}
+              data-aos="fade-up"
+              data-aos-delay={300 + idx * 100} // stagger each logo
               className="bg-white/5 p-3 rounded-lg hover:bg-white/10 transition-all duration-300 flex justify-center items-center"
             >
               <Image
@@ -75,13 +98,15 @@ export default function Brands() {
         </div>
 
         {/* Button */}
-        <Button
-          onClick={handleLimit}
-          variant="outline"
-          className="bg-transparent border-gray-400 text-gray-200 hover:bg-gray-100/10 hover:text-white transition-all"
-        >
-          {isOpen ? "− See less brands" : "+ See all brands"}
-        </Button>
+        <div data-aos="fade-up" data-aos-delay={1000}>
+          <Button
+            onClick={handleLimit}
+            variant="outline"
+            className="bg-transparent border-gray-400 text-gray-200 hover:bg-gray-100/10 hover:text-white transition-all"
+          >
+            {isOpen ? "− See less brands" : "+ See all brands"}
+          </Button>
+        </div>
       </div>
     </section>
   );
