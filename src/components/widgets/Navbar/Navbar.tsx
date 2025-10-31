@@ -20,7 +20,7 @@ const navItems = [
   { name: "Services", href: "/services" },
   { name: "About", href: "/about" },
   { name: "Contact Us", href: "/contact" },
-  { name: "Pricing", href: "/pricing" },
+  // { name: "Pricing", href: "/pricing" },
 ];
 
 export function Navbar() {
@@ -58,7 +58,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex md:items-center md:gap-6">
+        <div className="hidden md:flex md:items-center md:gap-14">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
